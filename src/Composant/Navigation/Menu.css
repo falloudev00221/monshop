@@ -1,0 +1,125 @@
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+ 
+  }
+  
+  .menu-toggle {
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .menu-icon {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    position: relative;
+  }
+  
+  .menu-icon::before,
+  .menu-icon::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+  }
+  
+  .menu-icon::before {
+    top: -8px;
+  }
+  
+  .menu-icon::after {
+    top: 8px;
+  }
+  
+  .menu-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    margin-left: 15%;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    z-index: 1;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .menu-items.open {
+    max-height: 200px; /* Ajustez la hauteur maximale selon vos besoins */
+  }
+  
+  .menu-items li {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .menu-items li:last-child {
+    border-bottom: none;
+  }
+  
+  .menu-items a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .menu {
+      justify-content: flex-start;
+      display: none;
+      
+    }
+    .menu-toggle {
+      display: none;
+    }
+    .menu-items {
+      position: static;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      max-height: none;
+      border: none;
+      flex-direction: row;
+    }
+    .menu-items li {
+      margin-right: 20px;
+      border-bottom: none;
+    }
+  }
+
+
+  @media (min-width: 768px) {
+    .menu {
+      justify-content: flex-start;
+      
+    }
+    .menu-toggle {
+      display: none;
+    }
+    .menu-items {
+      position: static;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      max-height: none;
+      border: none;
+      flex-direction: row;
+    }
+    .menu-items li {
+      margin-right: 20px;
+      border-bottom: none;
+    }
+  }
+  
+  

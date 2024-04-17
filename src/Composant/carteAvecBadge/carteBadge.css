@@ -1,0 +1,40 @@
+#cardx{
+
+
+    width: 15rem;
+    margin-bottom: 20px;
+}
+
+#btn_voir_plus{
+
+    margin-left: 1%;
+    margin-right: auto;
+}
+
+#badge{
+
+    background-color: red;
+    color: white;
+    width: fit-content;
+    border-radius: 100%;
+    padding: 2px;
+   position: absolute;
+    margin-top: -170px;
+    float: right;
+    margin-left: 67%;
+    
+
+
+
+}
+
+@media (max-width: 768px) {
+
+  #cardx{
+
+    margin-left: 65%;
+  }
+
+
+  }
+  

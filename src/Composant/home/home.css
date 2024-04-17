@@ -1,0 +1,46 @@
+.meunu_view {
+
+    
+}
+
+#listpuce{
+
+
+}
+
+#blocksideproduit{
+    display: flex;
+    margin-bottom: 150px;
+}
+
+.centrale{
+
+    width: 100%;
+  
+}
+
+
+@media (max-width: 768px) {
+
+    #hautepagemenuettitre{
+
+        display: block;
+        width: 100%;
+    }
+    #Contenair_bare_recherche{
+        width: 100%;
+    }
+    #block_carte_avec_bad{
+
+        width: 100%;
+        display: block;
+    }
+
+    #blocksideproduit{
+
+        width: 100%;
+    }
+
+
+  }
+  

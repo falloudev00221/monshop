@@ -1,0 +1,32 @@
+.card{
+
+    width: 12rem;
+    height: 250px;
+}
+#nameProduct{
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
+
+#imgfit{
+
+    height: 150px;
+    object-fit: cover;
+    max-width: 100%;
+
+    
+}
+
+#cardx2img{
+
+    height: 150px;
+    object-fit: cover;
+    max-width: 100%;
+
+
+}

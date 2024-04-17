@@ -1,0 +1,39 @@
+.slider2 {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Définissez la largeur maximale selon vos besoins */
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+  
+  .slider2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+  }
+  
+  .slider2 button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .slider2 button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .slider2 button:first-child {
+    left: 10px;
+  }
+  
+  .slider2 button:last-child {
+    right: 10px;
+  }
+  

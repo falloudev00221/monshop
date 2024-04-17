@@ -1,0 +1,123 @@
+/* NavigationDrawer.css */
+
+.navigation-drawer {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #612601;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 10;
+  }
+  
+  .navigation-drawer.open {
+    width: 250px;
+  }
+  
+  .menu-list {
+    display: flex;
+    flex-direction: row; /* Affiche les éléments horizontalement par défaut */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-list a {
+    text-decoration: none;
+    color: #1565c0; /* Changement de la couleur à bleu */
+    padding: 10px; /* Ajustement de la distance entre les menus */
+    transition: 0.3s;
+  }
+  
+  .menu-list a:hover {
+    color: #64b5f6; /* Changement de la couleur au survol */
+  }
+  
+  .drawer-toggle-button, .drawer-close-button {
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: #818181;
+  }
+  
+  .drawer-toggle-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+  }
+  
+  .drawer-close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+  }
+  
+  @media (max-width: 768px) {
+    .navigation-drawer {
+      overflow: hidden;
+    }
+  
+    .menu-list {
+      flex-direction: column; /* Affiche les éléments verticalement sur les petits écrans */
+      /* justify-content: spa; */
+      align-items: center;
+    
+      height: 100%;
+    }
+  
+    .menu-list a {
+      padding: 15px; /* Rétablissement de la distance pour les petits écrans */
+    }
+  
+    .drawer-close-button {
+      z-index: 2;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .navigation-drawer {
+      overflow: hidden;
+    }
+  
+    .menu-list {
+      flex-direction: column; /* Affiche les éléments verticalement sur les petits écrans */
+      /* justify-content: spa; */
+      align-items: center;
+    
+      height: 100%;
+    }
+  
+    .menu-list a {
+      padding: 15px; /* Rétablissement de la distance pour les petits écrans */
+    }
+  
+    .drawer-close-button {
+      z-index: 2;
+    }
+  }
+  
+  
+  @media (min-width: 1100px) {
+    /* Styles pour les grands écrans */
+    .menu-list {
+      
+     
+     display: column; /* Affiche les éléments horizontalement sur les grands écrans */
+    }
+
+    .navigation-drawer{
+
+      display: none;
+    }
+  
+    .menu-list a {
+      padding: 15px; /* Rétablissement de la distance pour les grands écrans */
+    }
+  }
+  

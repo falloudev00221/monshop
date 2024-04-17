@@ -1,0 +1,21 @@
+.cardfx{
+
+    width: 12rem;
+}
+#nameProduct{
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
+#gfd{
+
+    height: 150px;
+    object-fit: cover;
+    max-width: 100%;
+
+    
+}

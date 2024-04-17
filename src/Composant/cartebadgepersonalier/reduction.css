@@ -1,0 +1,31 @@
+#cardx2{
+
+
+    width: 13rem;
+    margin-left: 10px;
+    background-color: rgba(238, 234, 232, 0.443);
+    margin-bottom: 20px;
+}
+
+#btn_voir_plus{
+
+    margin-left: 1%;
+    margin-right: auto;
+}
+
+#badge2{
+
+    background-color: red;
+    color: white;
+    width: fit-content;
+    border-radius: 100%;
+    padding: 2px;
+   position: absolute;
+    margin-top: -150px;
+    float: right;
+    margin-left: 67%;
+    
+
+
+
+}
